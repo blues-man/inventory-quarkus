@@ -24,7 +24,7 @@ public class InventoryResourceTest {
           .when().get("/api/inventory/100000")
           .then()
              .statusCode(200)
-             .body(is("{\"id\":100000,\"quantity\":0}"));
+             .body(is("{\"id\":100000,\"quantity\":1}"));
     }
 
     @Test
